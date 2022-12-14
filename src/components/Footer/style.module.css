@@ -1,6 +1,9 @@
 .container {
     background-color: var(--dark-blue);
     padding-top: 4rem;
+
+    box-shadow: inset 0px 60px 47px -68px rgba(0,0,0,0.75);
+
 }
 
 .footerContainer {
@@ -39,23 +42,33 @@
     font-size: 14px;
 }
 
-.listItem:hover, .createdLink:hover {
+.listItem:hover,
+.createdLink:hover {
     color: var(--font-1);
+}
+
+.footerDivision {
+    height: 1px;
+    width: 90%;
+    background-color: var(--white);
+
+    margin-top: 2rem;
 }
 
 .logo {
     width: 25px;
 
     background-color: var(--white);
-    
+
     margin: 1.5rem 0;
     padding: 4px;
-    
+
     border-radius: 6px;
 }
 
 .createdBy {
     color: var(--white);
+    font-size: 14px;
 }
 
 .createdLink {

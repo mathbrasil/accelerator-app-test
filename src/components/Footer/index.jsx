@@ -76,6 +76,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
+                <span className={styles.footerDivision}></span>
                 <img src={acceleratorAppLogo} alt="" className={styles.logo} />
                 <p className={styles.createdBy}>
                     Created by{" "}
