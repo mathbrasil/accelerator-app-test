@@ -28,7 +28,7 @@ const FeaturesCards = () => {
         plusIcon,
     ];
 
-    const [pageSize, setPageSize] = useState();
+    const [pageSize, setPageSize] = useState(591);
 
     useEffect(() => {
         function handleResize() {
