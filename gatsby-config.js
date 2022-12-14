@@ -8,5 +8,18 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
-}
+    siteMetadata: {
+        title: `I like Google fonts`,
+    },
+    plugins: [
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `Poppins`,
+                ],
+                display: "swap",
+            },
+        },
+    ],
+};

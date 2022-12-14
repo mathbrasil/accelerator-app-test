@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 15px;
+}
+
+.imageGroupContainer {
+    max-width: 1130px;
+    width: 100%;
+
+    height: 30vw;
+    max-height: 311px;
+
+    display: flex;
+
+    margin: auto;
+}
+
+.imageGroup {
+    width: 20%;
+    height: 70%;
+}
+
+.img1 {
+    align-self: flex-end;
+}
+
+.img2 {
+    align-self: center;
+}
+
+.communityHeader {
+    max-width: 1130px;
+    width: 100%;
+    margin: auto;
+}
+
+.communityTitle {
+    color: var(--dark-blue);
+
+    font-weight: 700;
+    font-size: clamp(0.5rem, 6vw, 1.875rem);
+
+    margin-bottom: 1rem;
+
+    align-self: flex-start;
+}
+
+.communitySubTitle {
+    color: #1f2024;
+
+    font-size: 40px;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+
+    align-self: flex-start;
+}
+
+.communityParagraph {
+    color: var(--font-1);
+
+    font-weight: 600;
+    font-size: 18px;
+
+    margin-bottom: 86px;
+}

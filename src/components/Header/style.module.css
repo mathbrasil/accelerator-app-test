@@ -1,0 +1,95 @@
+.header {
+    position: sticky;
+    top: 0;
+
+    padding: 0 15px;
+
+    background-color: rgba(255, 255, 255, 0.959);
+    box-shadow: 0 2px 20px 6px rgb(0 0 0 / 15%);
+
+    z-index: 5;
+}
+
+.logo {
+    width: 45px;
+}
+
+.container {
+    max-width: 1130px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+    margin: auto;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 24px;
+    height: 24px;
+    gap: 5px;
+
+    background-color: transparent;
+    border: none;
+
+    display: none;
+
+    transition: 0.1s;
+}
+
+.span {
+    width: 26px;
+    height: 4px;
+
+    background-color: var(--font-2);
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 590px) {
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .test:hover .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        right: 13px;
+
+        padding: 12px 16px;
+
+        background-color: var(--white);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        border-radius: 7px;
+        z-index: 10;
+
+        animation: openDropDown .5s;
+    }
+
+    .nav:hover .button {
+        display: flex;
+    }
+
+    @keyframes openDropDown {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

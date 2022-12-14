@@ -1,0 +1,81 @@
+:root {
+    --white: #ffffff;
+    --dark-blue: #206ecf;
+
+    --font-1: #6b788a;
+    --font-2: #677489;
+    --font-3: #1b1e22;
+    --font-4: #111b29;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-3);
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+button {
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Swiper Bullets Edit */
+
+div .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 110px;
+    left: 30%;
+    width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    div .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 0;
+        left: 35%;
+        width: 100px;
+    }
+
+    div#pagination > div + div {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    div#pagination > div + div {
+        width: 150px;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 15px;
+
+    background-color: #f1f8f9;
+    transform: skewY(-7deg);
+
+    margin-top: 50px;
+}
+
+.content {
+    transform: skewY(7deg);
+}
+
+.featuresHeader {
+    max-width: 1130px;
+    width: 100%;
+
+    margin: auto;
+}
+
+.featuresTitle {
+    color: var(--font-4);
+
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    margin-top: 10vw;
+}
+
+.featuresParagraph {
+    color: var(--font-1);
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 32px;
+}
