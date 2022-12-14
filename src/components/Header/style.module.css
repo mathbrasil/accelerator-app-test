@@ -53,6 +53,20 @@
     border-radius: 2px;
 }
 
+.chat {
+    /* width: 60px; */
+
+    position: fixed;
+    bottom: -20px;
+    right: -10px;
+    
+    cursor: pointer;
+}
+
+.chatIcon {
+    /* width: 60px; */
+}
+
 @media screen and (max-width: 590px) {
     .button {
         display: flex;

@@ -3,6 +3,7 @@ import React from "react";
 import * as styles from "./style.module.css";
 
 import acceleratorAppLogo from "../../assets/images/acceleratorAppLogo.svg";
+import chatIcon from "../../assets/icons/chatIcon.svg";
 
 const Header = () => {
     return (
@@ -23,6 +24,9 @@ const Header = () => {
                     </nav>
                 </div>
             </div>
+            <span className={styles.chat}>
+                <img src={chatIcon} alt="" className={styles.chatIcon} />
+            </span>
         </header>
     );
 };

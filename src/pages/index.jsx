@@ -5,9 +5,10 @@ import InicialSection from "../components/InicialSection";
 import CommunitySection from "../components/CommunitySection";
 import FeaturesSection from "../components/FeaturesSection";
 import FeedbackSection from "../components/FeedbackSection";
+import Footer from "../components/Footer";
+
 
 import "swiper/css/bundle";
-import Footer from "../components/Footer";
 
 export default function Home() {
     return (
