@@ -9,7 +9,7 @@ const FeedbackSection = () => {
     return (
         <section className={styles.container} id="feedbacks">
             <div className={styles.feedbackContainer}>
-                <div className={styles.feedbackHeader}>
+                <div>
                     <h3 className={styles.feedbackTitle}>
                         What our customers say
                     </h3>
